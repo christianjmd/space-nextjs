@@ -333,7 +333,7 @@
 }
 
 #bg {
-	background: url(../assets/planets/background-destination-desktop.jpg),
+	background: url(../assets/crew/background-crew-desktop.jpg),
 		#181929;
 	background-size: 100vw 100vh;
 	position: fixed;
@@ -345,7 +345,7 @@
 }
 @media (min-width: 30em) {
 	#bg {
-		background: url(../assets/planets/background-destination-tablet.jpg),
+		background: url(../assets/crew/background-crew-tablet.jpg),
 			#181929;
 		background-size: 100vw 100vh;
 		background-attachment: fixed;
@@ -353,7 +353,7 @@
 }
 @media (min-width: 50em) {
 	#bg {
-		background: url(../assets/planets/background-destination-desktop.jpg),
+		background: url(../assets/crew/background-crew-desktop.jpg),
 			#181929;
 		background-size: 100vw 100vh;
 		background-attachment: fixed;

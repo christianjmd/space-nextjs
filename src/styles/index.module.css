@@ -11,22 +11,8 @@
   @font-face {
 	font-family: BarlowCondensed;
 	src: url(BarlowCondensed-Regular.ttf);
-  }
-
-
-.atributtion {
-	position: fixed;
-	bottom: 0;
-	right: 10px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: #d0d6f963;
-	opacity: 0.9;
-	font-size: 14px;
 }
-.atributtion a {
-	opacity: 0.8;
-}
+
 .main {
 	display: flex;
 	flex-direction: column;
@@ -77,6 +63,7 @@
 	text-decoration: none;
 	position: relative;
 	transition: transform 0.2s ease-in-out;
+	font-weight: 400;
 }
 .exploreBtn:hover {
 	transform: scale(1.05);

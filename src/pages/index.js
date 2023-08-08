@@ -7,7 +7,7 @@ export default function Home() {
 
 	return (
 			<>
-			<Layout>
+			
 			<Head>
 				<title>Space Website | Home</title>
 			</Head>
@@ -23,11 +23,10 @@ export default function Home() {
 						Well sit back, and relax because we’ll give you a truly out of this
 						world experience!
 					</p>
+					<Link legacyBehavior href="/destination"><a className={styles.exploreBtn}>Explore</a></Link>
 				</div>
-				<Link legacyBehavior href="/destination"><a className={styles.exploreBtn}>Explore</a></Link>
 			</main>
 			<div id={styles.bg}></div>
-			</Layout>
 			</>
 		
 	)

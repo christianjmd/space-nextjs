@@ -1,3 +1,18 @@
+@font-face {
+	font-family: Bellefair;
+	src: url(Bellefair-Regular.ttf);
+  }
+
+  @font-face {
+	font-family: Barlow;
+	src: url(Barlow-Regular.ttf);
+  }
+
+  @font-face {
+	font-family: BarlowCondensed;
+	src: url(BarlowCondensed-Regular.ttf);
+}
+
 .header {
 	padding-block: 13px;
 	padding-inline-start: 20px;
@@ -5,7 +20,7 @@
 	justify-content: space-between;
 	position: relative;
 	align-items: center;
-	right: 0px;
+	color: white;
 }
 .navContainer nav {
 	position: absolute;
@@ -13,10 +28,11 @@
 	width: 100%;
 	backdrop-filter: blur(40px);
 	top: 0;
-	right: 0;
+	right: -100%;
 	background: rgba(255, 255, 255, 4%);
 	transition: right 0.2s ease-in-out;
 	overflow: hidden;
+	list-style: none;
 	color: white;
 }
 .navContainer {
@@ -26,17 +42,43 @@
 	height: 100vh;
 	overflow: hidden;
 	width: clamp(13rem, 35%, 20rem);
-	color: white;
 }
-.navContainer nav ul {
+.navContainer nav ul{
 	display: flex;
 	gap: 1.5rem;
 	padding: 6rem 2rem;
 	justify-content: space-evenly;
 	flex-direction: column;
 	font-size: 14px;
-	color: white;
+	font-family: 'BarlowCondensed';
+	/* a: {color: white} */
+	
+	
 }
+
+.navContainer a {
+	color: white;
+	text-decoration: none;
+	color: #FFF;
+	font-family: BarlowCondensed;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 2.7px;
+	display: inline-flex;
+	height: 19px;
+	padding-right: 0px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 14px;
+	flex-shrink: 0;
+}
+
+.navContainer a span {
+	font-weight: 1000;
+}
+
 .menuBtn {
 	background: none;
 	border: none;
@@ -45,7 +87,6 @@
 	right: 0;
 	margin-right: 10px;
 	z-index: 80;
-	
 }
 .menuBtn img {
 	width: 22px;
@@ -129,7 +170,6 @@
 	}
 	.header li {
 		font-size: 14px;
-		color: white;
 	}
 	.header li::after {
 		content: "";
