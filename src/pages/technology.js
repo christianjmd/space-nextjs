@@ -47,14 +47,14 @@ export default function Tech( {localData} ) {
             </div>
             <div className={styles.techInfoContainer}>
               <div className={styles.techInfo}>
-                <nav className={styles.techNav}>
+                <nav className={styles.exploreBtn}>
                   <ul>
-                  {localData.technology.map(({ id, name, webname }) => (
-                      <li key={id}>
-                        {/* below is the link for the index page titles */}
-                      <Link href={`/technology/${id}`}>{name}</Link> 
-                    </li>
-                    ))}
+                    {localData.technology.map(({ id, name, webname }) => (
+                        <li key={id}>
+                          {/* below is the link for the index page titles */}
+                        <Link href={`/technology/${id}`}>{name}</Link> 
+                        </li>
+                      ))}
                   </ul>
                 </nav>
               </div>

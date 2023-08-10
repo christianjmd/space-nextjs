@@ -33,10 +33,7 @@ export default function Home( {localData}) {
 						Well sit back, and relax because we’ll give you a truly out of this
 						world experience!
 					</p>
-					
-					{localData.planets.map(({ name }) => (
-						<Link legacyBehavior href={`/destination/Moon`}><a className={styles.exploreBtn}>Explore</a></Link>
-						))}
+					<Link legacyBehavior href="/destination"><a className={styles.exploreBtn}>Explore</a></Link>
 				</div>
 			</main>
 			<div id={styles.bg}></div>
