@@ -2,8 +2,18 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/index.module.css'
 import Layout from '../components/Layout'
+import { getLocalData } from './api/localdata'
 
-export default function Home() {
+export async function getStaticProps() {
+	const localData = await getLocalData()
+  
+	return {
+	  props: { localData }
+	}
+  }
+
+
+export default function Home( {localData}) {
 
 	return (
 			<>
@@ -23,7 +33,10 @@ export default function Home() {
 						Well sit back, and relax because we’ll give you a truly out of this
 						world experience!
 					</p>
-					<Link legacyBehavior href="/destination"><a className={styles.exploreBtn}>Explore</a></Link>
+					
+					{localData.planets.map(({ name }) => (
+						<Link legacyBehavior href={`/destination/Moon`}><a className={styles.exploreBtn}>Explore</a></Link>
+						))}
 				</div>
 			</main>
 			<div id={styles.bg}></div>

@@ -1,9 +1,10 @@
 import { useState } from "react"
 import Image from "next/image"
 import Head from "next/head"
-import data from "../assets/data.json"
-import handleLinks from "../helpers/linksAnimation"
-import styles from "../styles/destination.module.css"
+import data from "../../assets/data.json"
+import handleLinks from "../../helpers/linksAnimation"
+import styles from "../../styles/destination.module.css"
+import Link from "next/link"
 
 export default function Destination() {
 	const [linkActive, setLinkActive] = useState(data.planets[0].name);
@@ -45,10 +46,16 @@ export default function Destination() {
 								<ul>
 									{
 										data.planets.map((planet) => {
+											// return (
+											// 	<li key={planet.distance} className={linkActive === planet.name ? styles.linkNavActive : ""}>
+											// 		<button onClick={handleNav} value={planet.name}>{planet.name}</button>
+											// 		{/* <Link legacyBehavior onClick={handleNav}  href={`/destination/Moon`}><a className={styles.exploreBtn}>Explore</a></Link> */}
+											// 	</li>
+											// )
 											return (
-												<li key={planet.distance} className={linkActive === planet.name ? styles.linkNavActive : ""}>
-													<button onClick={handleNav} value={planet.name}>{planet.name}</button>
-												</li>
+											<li key={planet.distance} className={linkActive === planet.name ? styles.linkNavActive : ""}>
+											<Link href={`/destination/${planet.name}`} onClick={handleNav} value={planet.name}>{planet.name}</Link> 
+											</li>
 											)
 										})
 									}

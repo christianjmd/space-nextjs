@@ -78,7 +78,10 @@
 .navContainer a span {
 	font-weight: 1000;
 }
-
+.linkNavActive::after {
+	bottom: -15px !important;
+	opacity: 1 !important;
+}
 .menuBtn {
 	background: none;
 	border: none;
@@ -188,9 +191,6 @@
 		bottom: -2rem !important;
 		top: auto;
 		transform: scaleY(1);
-	}
-	.header li:hover::after {
-		bottom: -2rem;
 	}
 }
 

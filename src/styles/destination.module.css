@@ -13,8 +13,10 @@
 	src: url(BarlowCondensed-Regular.ttf);
 }
 .mainPage h1 {
-	color: #FFF;
-	font-family: BarlowCondensed;
+	/* color: #FFF;
+	font-family: BarlowCondensed; */
+	color: #FF00FF;
+    font-family: "Comic Sans MS";
 	/* font-size: 28px; */
 	font-size: clamp(14px, 5vw, 28px);
 	font-style: normal;
@@ -30,7 +32,8 @@
 	font-weight: lighter;
 }
 .mainPage span {
-	color: grey;
+	/* color: grey; */
+	color: #FF00FF;
 }
 
 .mainPage{
@@ -215,9 +218,11 @@
 	.planetData span {
 		margin-top: 10px;
 		font-size: 23px;
+		color: white;
 	}
 	.mainPage span {
-		color: grey;
+		/* color: grey; */
+		color: #FF00FF;
 	}
 }
 
@@ -268,12 +273,14 @@
 	.planetData span {
 		margin-top: 10px;
 		font-size: 25px;
+		color: white;
 	}
 	.planetsNav li::after {
 		opacity: 0.5;
 	}
 	.mainPage span {
-		color: grey;
+		/* color: grey; */
+		color: #FF00FF;
 	}
 }
 @media (min-width: 90em) {
@@ -297,6 +304,7 @@
 	}
 	.planetData span {
 		font-size: 28px;
+		color: white;
 	}
 	/* .mainPage h1 {
 		color: #FFF;
