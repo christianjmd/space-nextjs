@@ -36,16 +36,16 @@ export default function Crew ( {localData} ) {
 			<main className={`mainPage ${styles.mainPage}`}>
 				<h1 className="title"><span>02</span>MEET YOUR CREW</h1>
 				<div className={styles.crewInfoContainer}>
-				<nav className={styles.crewNav}>
-					<ul>
-						{localData.crew.map(({ name }) => (
-							<li key={name}>
-								{/* below is the link for the index page titles */}
-								<Link href={`/crew/${name}`}>{name}</Link> 
-							</li>
-						))}
-					</ul>
-				</nav>
+					<nav className={styles.crewNav}>
+						<ul>
+							{localData.crew.map(({ name }) => (
+								<li key={name}>
+									{/* below is the link for the index page titles */}
+									<Link href={`/crew/${name}`}>{name}</Link> 
+								</li>
+							))}
+						</ul>
+					</nav>
 				<div>
 				</div>
                 </div>
